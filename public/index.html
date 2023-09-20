@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <title>Home</title>
+</head>
+
+<body class="font-avenir">
+  <div class="overflow-hidden search-fix">
+    <button id="scrollToTopBtn" onclick="topFunction()"
+      class="w-10 h-10 right-5 p-2.5 fixed translate-y-[100px] flex opacity-0 bottom-5 z-[9999] bg-hover-red  items-center justify-center rounded-full"><img
+        src="images/top-arrow.svg" alt=""></button>
+    <header>
+      <nav class="bg-white  lg:h-auto h-[96px]">
+        <div class="max-w-[1220px] sm:px-5 px-4 mx-auto lg:relative py-5 fixed z-[9999] top-0 w-full bg-white">
+          <div class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+              <img src="images/nav-logo.svg" class="h-14 mr-3" alt="no-img" />
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" id="hamburger" type="button" onclick="changeImage()"
+              class="inline-flex items-center p-2 w-10 h-10 lg:hidden  focus:outline-none focus:ring-0 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-dropdown" aria-expanded="false">
+              <img src="images/hamburger.svg" id="myImage" alt="">
+            </button>
+            <div
+              class="hidden  lg:flex lg:w-auto bg-white gap-11 items-center lg:static absolute top-[10.4rem] lg:pt-0 lg:pb-0 pb-[50px] pt-[30px] lg:px-0 px-[37px] z-[999] w-full left-0"
+              id="navbar-dropdown">
+              <ul class="lg:flex text-text-13  font-avenir-demogap-10 text-d-color">
+                <li class="lg:mb-0 mb-[30px] hover-list">
+                  <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                    class="flex hover:text-red-1 lg:px-5 items-center blog-btn w-full font-avenir-demo text-gray-900  md:w-auto uppercase tracking-[.25em]">NEWS
+                    & BLOG
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" ml-2.5" width="12" height="7" viewBox="0 0 12 7"
+                      fill="none">
+                      <path
+                        d="M10.5837 0C11.4745 0 11.9207 1.07694 11.2909 1.70696L6.70711 6.29261C6.3166 6.68327 5.68333 6.68333 5.29275 6.29275L0.707105 1.70711C0.0771402 1.07714 0.523309 0 1.41421 0H10.5837Z"
+                        fill="#131E29" />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownHover"
+                    class="z-10 hidden lg:!-mt-1 lg:!ml-12 font-normal bg-white divide-y divide-gray-100 rounded-lg xl:shadow-lg w-[247px]">
+                    <ul class="xl:py-2 pt-2 xl:px-[30px] px-[18px] text-sm text-gray-700"
+                      aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="news&blog-article.html"
+                          class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">All
+                          Articles</a>
+                      </li>
+                      <li>
+                        <a href="news&blog-article.html"
+                          class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Credit
+                          Scores</a>
+                      </li>
+                      <li>
+                        <a href="news&blog-article.html"
+                          class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Debt</a>
+                      </li>
+                      <li>
+                        <a href="news&blog-article.html"
+                          class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Loan
+                          Information &
+                          Tips</a>
+                      </li>
+                      <li>
+                        <a href="news&blog-article.html"
+                          class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Moneylending</a>
+                      </li>
+                      <li>
+                        <a href="news&blog-article.html"
+                          class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">News
+                          & Loan
+                          Scams</a>
+                      </li>
+                      <li>
+                        <a href="news&blog-article.html"
+                          class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] xl:py-2.5 pt-2.5">Registry
+                          of
+                          Moneylenders</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </li>
+
+                <li class="lg:mb-0 mb-[30px]">
+                  <a href="about-mla.html" class="uppercase lg:px-5 tracking-[.25em] hover:text-red-1 font-avenir-demo"
+                    aria-current="page">ABOUT
+                    MLA</a>
+                </li>
+                <li class="lg:mb-0 mb-10">
+                  <a href="moneylenders.html"
+                    class="uppercase lg:px-5 tracking-[.25em] hover:text-red-1 font-avenir-demo">LEGAL
+                    MONEYLENDERS</a>
+                </li>
+              </ul>
+              <a href="enquire.html"
+                class="bg-red-1 font-primary-medium rounded-md text-white py-2 pt-2.5 min-h-[42px] font-avenir-demo min-w-[126px] text-text-13 hover:bg-hover-red border border-red-1 hover:shadow-lg uppercase tracking-[.25em] flex items-center justify-center">ENQUIRE</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="search-wrap bg-gray-1 w-full sm:py-4 py-[14px] flex justify-center items-center">
+        <form class="w-full max-w-[1220px] sm:px-5 px-4 mx-auto">
+          <div class="relative">
+            <button type="submit" class="absolute inset-y-0 right-5">
+              <div class=" flex items-center pl-3 ">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.7156 18.3279L16.4979 15.1102C17.9355 13.3263 18.6636 11.0742 18.5423 8.78633C18.421 6.49845 17.459 4.33598 15.8408 2.71403C14.0987 0.976041 11.7383 0 9.27743 0C6.81658 0 4.45621 0.976041 2.71404 2.71403C0.976053 4.4562 0 6.81658 0 9.27742C0 11.7383 0.976053 14.0986 2.71404 15.8408C3.57589 16.7034 4.5997 17.3872 5.72666 17.8529C6.85361 18.3186 8.06148 18.557 9.28086 18.5544C11.4038 18.5567 13.4632 17.8296 15.1141 16.4949L18.3308 19.7127C18.5147 19.8966 18.7641 19.9999 19.0242 20C19.1531 20.0001 19.2808 19.9748 19.4 19.9255C19.5191 19.8762 19.6274 19.8038 19.7185 19.7127C19.9014 19.5284 20.0038 19.2792 20.0032 19.0197C20.0027 18.7601 19.8993 18.5113 19.7156 18.3279ZM4.10174 14.4541C2.73074 13.0801 1.96077 11.2184 1.96077 9.27742C1.96077 7.33644 2.73074 5.47472 4.10174 4.10075C4.78134 3.42022 5.58878 2.88073 6.4776 2.51332C7.36642 2.14591 8.3191 1.95782 9.28086 1.95987C10.2416 1.95852 11.1931 2.14686 12.0808 2.51408C12.9686 2.88129 13.7751 3.42016 14.4541 4.09977C15.8248 5.4737 16.5946 7.33521 16.5946 9.27596C16.5946 11.2167 15.8248 13.0782 14.4541 14.4521C13.0806 15.8233 11.2192 16.5936 9.27833 16.594C7.3375 16.5944 5.47579 15.8248 4.10174 14.4541Z"
+                    fill="#131E29" />
+                </svg>
+
+              </div>
+            </button>
+            <input type="text" id="simple-search"
+              class="block w-full p-2 pr-12 pl-5 min-h-[42px] text-sm text-gray-900 border  border-gray-300 rounded-lg bg-gray-50 focus:border-red-600 font-normal focus:ring-0 placeholder:text-gray-3 placeholder:text-base pt-3"
+              placeholder="What are you looking for?" required>
+          </div>
+        </form>
+      </div>
+    </header>
+    <section class="">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="w-full swiper-slide bg-[url('../images/hero-image.png')] bg-no-repeat bg-center xl:py-[154px] sm:py-28 py-36 bg-cover object-cover relative before:absolute before:top-0 before:left-0 before:bg-black before:w-full before:h-full before:opacity-30">
+            <div class="w-full max-w-[1220px] sm:px-5 px-4 mx-auto relative text-white">
+              <div class="lg:w-1/2 md:w-4/6 w-full">
+                <h3 class="text-xs font-avenir-demouppercase sm:tracking-[.25em] tracking-[2.4px] sm:mb-4 mb-2.5">A
+                  COMPREHENSIVE
+                  GUIDE TO
+                  MONEYLENDING</h3>
+                <h1 class="font-georgia sm:text-text-34 text-[30px] md:leading-[140%] leading-[130%] md:mb-7 mb-[31px]">
+                  MLA
+                  providing the
+                  latest & most accurate information
+                  about the
+                  moneylending scene.</h1>
+                <a href="#"
+                  class="border-red-1 hover:bg-hover-red hover:text-white hover:border-hover-red  text-[13px] h-[42px] font-avenir-demo flex items-center justify-center border-2 w-[160px] tracking-[0.15em] text-center pt-2.5  pb-[7px] bg-white text-red-1 rounded-lg uppercase">Learn
+                  More</a>
+              </div>
+
+
+            </div>
+          </div>
+          <div
+            class="w-full swiper-slide bg-[url('../images/hero-image.png')] bg-no-repeat bg-center xl:py-[154px] sm:py-28 py-36 bg-cover object-cover relative before:absolute before:top-0 before:left-0 before:bg-black before:w-full before:h-full before:opacity-30">
+            <div class="w-full max-w-[1220px] sm:px-5 px-4 mx-auto relative text-white">
+              <div class="lg:w-1/2 md:w-4/6 w-full">
+                <h3 class="text-xs font-avenir-demouppercase sm:tracking-[.25em] tracking-[2.4px] sm:mb-4 mb-2.5">A
+                  COMPREHENSIVE
+                  GUIDE TO
+                  MONEYLENDING</h3>
+                <h1 class="font-georgia sm:text-text-34 text-[30px] md:leading-[140%] leading-[130%] md:mb-7 mb-[31px]">
+                  MLA
+                  providing the
+                  latest & most accurate information
+                  about the
+                  moneylending scene.</h1>
+                <a href="#"
+                  class="border-red-1 hover:bg-hover-red hover:text-white hover:border-hover-red  text-[13px] h-[42px] font-avenir-demo flex items-center justify-center border-2 w-[160px] tracking-[0.15em] text-center pt-2.5  pb-[7px] bg-white text-red-1 rounded-lg uppercase">Learn
+                  More</a>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="bg-red-1 w-full  text-white text-lg">
+      <div class="w-full max-w-[1220px] lg:px-5 px-0 mx-auto">
+        <div>
+          <ul class="grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 text-center">
+            <li class="border-r-[1px] hover:bg-hover-red lg:border-b-0 border-b border-white">
+              <a href="#"
+                class="gap-3 px-3  h-[160px] pb-6 pt-[38px] sm:h-full w-full text-center inline-block hover:bg-hover-red">
+                <img src="images/scores-icon.svg" alt="no-img" class="min-h-[50px] inline-block align-bottom w-[60px]">
+                <h3 class="font-georgia xl:text-lg md:text-base text-lg text-white text-center leading-[130%] mt-2.5 ">
+                  Credit
+                  Scores</h3>
+              </a>
+            </li>
+            <li class="border-r-[1px] hover:bg-hover-red lg:border-b-0 border-b border-white">
+              <a href="#"
+                class="gap-3 px-3 h-[160px] pb-6 pt-[38px] sm:h-full w-full text-center inline-block hover:bg-hover-red">
+                <img src="images/debt-icon.svg" alt="no-img" class="min-h-[50px] inline-block align-bottom">
+                <h3 class="font-georgia xl:text-lg md:text-base text-lg text-white text-center leading-[130%] mt-2.5">
+                  Debt</h3>
+              </a>
+            </li>
+            <li class="lg:border-r-[1px] sm:border-r-0 border-r hover:bg-hover-red lg:border-b-0 border-b border-white">
+              <a href="#"
+                class="gap-3 px-3 h-[160px] pb-6 pt-[38px] sm:h-full w-full text-center inline-block hover:bg-hover-red">
+                <img src="images/loan-icon.svg" alt="no-img" class="min-h-[50px] inline-block align-bottom">
+                <h3 class="font-georgia xl:text-lg md:text-base text-lg text-white text-center leading-[130%] mt-2.5">
+                  Loan
+                  Information <br> &
+                  Tips
+                </h3>
+              </a>
+            </li>
+            <li class="border-r-[1px] hover:bg-hover-red sm:border-b-0 border-b border-white">
+              <a href="#"
+                class="gap-3 px-3 h-[160px] pb-6 pt-[38px] sm:h-full w-full text-center inline-block hover:bg-hover-red">
+                <img src="images/money-icon.svg" alt="no-img" class="min-h-[50px] inline-block align-bottom">
+                <h3 class="font-georgia xl:text-lg md:text-base text-lg text-white text-center leading-[130%] mt-2.5">
+                  Moneylending
+                </h3>
+              </a>
+            </li>
+            <li class="border-r-[1px] hover:bg-hover-red "><a href="#"
+                class="gap-3 px-3 h-[160px] pb-6 pt-[38px] sm:h-full w-full text-center inline-block hover:bg-hover-red">
+                <img src="images/news-icon.svg" alt="no-img" class="min-h-[50px] w-[50px] inline-block align-bottom">
+                <h3 class="font-georgia xl:text-lg md:text-base text-lg text-white text-center leading-[130%] mt-2.5">
+                  News & Loan
+                  Scams</h3>
+              </a></li>
+            <li class=" hover:bg-hover-red ">
+              <a href="#"
+                class="gap-3 px-3 h-[160px] pb-6 pt-[38px] sm:h-full w-full text-center inline-block hover:bg-hover-red">
+                <img src="images/registery-icon.svg" alt="no-img" class="min-h-[50px] inline-block align-bottom">
+                <h3 class="font-georgia xl:text-lg md:text-base text-lg text-white text-center leading-[130%] mt-2.5">
+                  Registry of
+                  Moneylenders
+                </h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="sm:mt-[100px] mt-[70px] sm:mb-[94px] mb-[70px]">
+      <div class="max-w-[1220px] sm:px-5 px-4 mx-auto">
+        <div class="flex flex-wrap">
+          <div class="xl:w-1/2 lg:w-5/12">
+            <h6 class="text-xs font-avenir-demo text-d-color mb-2.5 tracking-[2.4px]">WHAT YOU CAN GET</h6>
+            <h3
+              class="sm:text-[34px] text-[30px] font-georgia font-normal text-d-color leading-[140%] sm:mb-[18px] mb-5">
+              What
+              we provide?</h3>
+            <p class="text-base font-normal leading-[140%] font-avenir text-gray-1000 max-w-[480px]">With a library of
+              resources
+              dedicated to inform
+              individuals
+              about licensed moneylenders, we provide
+              information such as:</p>
+          </div>
+          <div class="xl:w-1/2 lg:w-7/12 lg:mt-0 mt-10">
+            <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-5 gap-[27px]">
+              <div>
+                <div class="flex sm:mb-[52px] mb-[27px]">
+                  <div>
+                    <img src="images/icon-1.svg" alt="">
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-base font-avenir leading-[140%] text-d-color ml-5">News and articles covering the
+                      latest
+                      moneylending
+                      schemes</p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div>
+                    <img src="images/icon-2.svg" alt="">
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-base font-avenir leading-[140%] text-d-color ml-5">Thorough evaluation and
+                      explanation
+                      on
+                      loans to help make financial decisions</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="flex sm:mb-[52px] mb-[27px]">
+                  <div>
+                    <img src="images/icon-3.svg" alt="">
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-base font-avenir leading-[140%] text-d-color ml-5">Helpful tips to get rid of debt ,
+                      improve credit score or level-up your finances</p>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div>
+                    <img src="images/icon-4.svg" alt="">
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-base font-avenir leading-[140%] text-d-color ml-5">Explanations on the loan process,
+                      especially helpful for first time loan takers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[url('../images/bg-img.png')] relative bg-cover bg-no-repeat bg-center pt-[93px] pb-[613px]">
+      <div class="max-w-[890px] lg:px-5 px-4 mx-auto">
+        <div class="sm:flex flex-wrap items-center">
+          <div class="sm:w-[45%] w-full">
+            <div class="sm:border-r sm:text-start text-center border-white">
+              <h6 class="font-avenir-demo text-xs text-white tracking-[2.4px]"><span class="relative after:content-[''] after:bg-[url('../images/circle.svg')] after:bg-contain after:h-[60px] after:w-[60px]
+                 after:absolute after:top-[-25px] after:left-[-30px]">WE</span> COLLECT INFO
+                FROM</h6>
+              <h3 class="text-white text-[80px] font-normal font-georgia leading-[100%]">130<sup
+                  class="text-[40px]">+</sup>
+              </h3>
+              <p
+                class="font-avenir-demo text-xs text-white sm:mt-4 mt-5 tracking-[2.4px] sm:max-w-[228px] max-w-[280px] sm:mx-0 mx-auto">
+                FINANCIAL
+                INSTITUTIONS IN
+                SINGAPORE
+                SINCE 2019
+              </p>
+            </div>
+          </div>
+          <div class="sm:w-[55%] w-full sm:mt-0 mt-14">
+            <div class="lg:pl-[110px] sm:pl-10 sm:text-start text-center">
+              <h2 class="text-white font-georgia lg:text-[34px] text-[30px] leading-[140%]">A comprehensive guide to
+                moneylending</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-1">
+      <div class="max-w-[1220px] lg:px-5 px-4 mx-auto">
+        <div
+          class="bg-white xl:pl-[100px] lg:pl-16 sm:pl-8 pl-4 -mt-[517px] rounded-tl-md drop-shadow-3xl rounded-bl-md md:py-[100px] py-[70px] relative after:content-[''] after:absolute after:bg-white after:top-0 after:-right-full after:w-full after:h-full">
+          <div class="flex flex-wrap">
+            <div class="lg:w-[44%] w-full">
+              <div class="max-w-[380px]">
+                <h6 class="text-xs font-avenir-demo text-d-color mb-2.5 tracking-[2.4px]">NEWS & BLOG</h6>
+                <h3
+                  class="sm:text-[34px] text-[30px] font-georgia font-normal text-d-color sm:leading-[140%] leading-[130%] mb-[18px]">
+                  Our popular
+                  articles
+                </h3>
+                <p class="text-base font-normal text leading-[140%] text-gray-1000 max-w-[480px]">Lorem Ipsum is simply
+                  dummy
+                  text of the printing and typesetting industry.</p>
+                <a href="#"
+                  class="border-red-1 hover:bg-hover-red hover:text-white hover:border-hover-red mt-[34px] text-[13px] h-[42px] font-avenir-demo sm:flex hidden items-center justify-center border-2 w-[185px] tracking-[0.15em] text-center pt-2.5  pb-[7px] bg-white text-red-1 rounded-lg uppercase">MORE
+                  ARTICLES</a>
+              </div>
+            </div>
+            <div class="lg:w-[56%] w-full  lg:mt-0 mt-10">
+              <div class="sm:flex flex-wrap border-b border-gray-1 pb-[30px]">
+                <div>
+                  <a href="#"><img src="images/card-img-1.png" class="sm:w-[180px] w-full" alt=""></a>
+                </div>
+                <div class="flex-1 sm:ml-5 sm:mt-0 mt-5">
+                  <a href="news&blog.html"
+                    class="text-lg font-georgia !leading-[130%] block hover:text-hover-red text-d-color sm:mb-2 mb-2.5">
+                    How Do I Manage A Personal Loan
+                  </a>
+                  <p class="text-base text font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-3 mb-[15px]">7
+                    Questions to
+                    Ask
+                    Yourself before Getting a Loan. People in Singapore are taking loans in order to ac...</p>
+                  <a href="news&blog.html"
+                    class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                      class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                      viewBox="0 0 20 15" fill="none">
+                      <path
+                        d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                        fill="#A0A2A3" />
+                    </svg>Loan Information & Tips</a>
+                </div>
+              </div>
+              <div class="sm:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                <div>
+                  <a href="#"> <img src="images/card-img-2.png" class="sm:w-[180px] w-full" alt=""></a>
+                </div>
+                <div class="flex-1 sm:ml-5 sm:mt-0 mt-5">
+                  <a href="news&blog.html"
+                    class="text-lg  font-georgia !leading-[130%] hover:text-hover-red block text-d-color sm:mb-[18px] mb-5">
+                    $110,000 Lost In A Recent Loan Scam Where Crooks Impersonate MAS Officers From The Ministry Of Law
+                  </a>
+                  <a href="news&blog.html"
+                    class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                      class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                      viewBox="0 0 20 15" fill="none">
+                      <path
+                        d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                        fill="#A0A2A3" />
+                    </svg>News & Loan Scams</a>
+                </div>
+              </div>
+              <div class="sm:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                <div>
+                  <a href="#"> <img src="images/card-img-3.png" class="sm:w-[180px] w-full" alt=""></a>
+                </div>
+                <div class="flex-1 sm:ml-5 sm:mt-0 mt-5">
+                  <a href="news&blog.html"
+                    class="text-lg font-georgia !leading-[130%] hover:text-hover-red block text-d-color sm:mb-2 mb-2.5">
+                    How Do I Know If A Moneylender Is Licensed
+                  </a>
+                  <p class="text-base text font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-3 mb-[15px]">
+                    The
+                    Ministry of Law
+                    has made it easier for borrowers to verify how legitimate a moneylender is and whe...</p>
+                  <a href="news&blog.html"
+                    class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                      class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                      viewBox="0 0 20 15" fill="none">
+                      <path
+                        d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                        fill="#A0A2A3" />
+                    </svg>Moneylending</a>
+                </div>
+              </div>
+              <div class="sm:flex flex-wrap mt-[30px]">
+                <div>
+                  <a href="#"> <img src="images/card-img-4.png" class="sm:w-[180px] w-full" alt=""></a>
+                </div>
+                <div class="flex-1 sm:ml-5 sm:mt-0 mt-5">
+                  <a href="news&blog.html"
+                    class="text-lg font-georgia !leading-[130%] hover:text-hover-red block text-d-color sm:mb-2 mb-2.5">
+                    What Are The New Borrowing Restrictions For Foreigners
+                  </a>
+                  <p class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-3 mb-[15px]">An
+                    announcement
+                    made by the Ministry of Law on...</p>
+                  <a href="#"
+                    class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                      class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                      viewBox="0 0 20 15" fill="none">
+                      <path
+                        d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                        fill="#A0A2A3" />
+                    </svg>News & Loan Scams</a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center w-full">
+              <a href="news&blog.html"
+                class="border-red-1 hover:bg-hover-red hover:text-white hover:border-hover-red mt-10 mx-auto text-[13px] h-[42px] font-avenir-demo flex sm:hidden items-center justify-center border-2 w-[185px] tracking-[0.15em] text-center pt-2.5  pb-[7px] bg-white text-red-1 rounded-lg uppercase">MORE
+                ARTICLES</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-1 md:pt-0 pt-[70px]">
+      <div class="max-w-[1220px] sm:px-5 px-4 mx-auto">
+        <div class="flex flex-wrap items-center">
+          <div class="md:w-7/12 w-full md:order-1 order-2">
+            <img src="images/team-img-2.png" class="md:block hidden" alt="">
+            <img src="images/team.png" class="md:hidden block w-full" alt="">
+          </div>
+          <div class="md:w-5/12 w-full md:order-2 order-1">
+            <div class="text-center md:-ml-[78px]">
+              <h3
+                class="lg:text-[34px] text-[30px] font-georgia font-normal text-d-color leading-[140%] lg:mb-[18px] md:mb-2.5 mb-5">
+                Can’t find what you
+                are looking for?
+              </h3>
+              <p class="text-base font-normal leading-[140%] text-gray-1000 max-w-[580px] mx-auto">
+                Click enquire button
+                below to
+                leave your contact details and we’ll reach out to you as soon as possible.</p>
+              <a href="#"
+                class="border-red-1 bg-red-1 hover:border-hover-red text-white lg:mt-[34px] md:mt-2.5 mt-[34px] text-[13px] h-[42px] mx-auto font-avenir-demo flex items-center justify-center border-2 w-[174px] tracking-[0.15em] text-center pt-2.5  pb-[7px] hover:bg-hover-red rounded-lg uppercase">ENQUIRE
+                NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-d-color pt-[30px] pb-[17px]">
+        <div class="max-w-[1220px] sm:px-5 px-4 mx-auto">
+          <div class="text-center">
+            <img src="images/footer-logo.svg" alt="" class="inline-block">
+            <ul class="sm:flex items-center justify-center mt-[30px] sm:mb-6 mb-5 mx-auto sm:max-w-full max-w-[212px]">
+              <li><a href="#"
+                  class="text-base font-avenir sm:py-0 py-2.5 sm:px-5 block leading-[140%] font-normal text-gray-3 sm:border-r sm:border-b-0 border-b border-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Enquire</a>
+              </li>
+              <li><a href="#"
+                  class="text-base font-avenir sm:py-0 py-2.5 sm:px-5 block leading-[140%] font-normal text-gray-3 sm:border-r sm:border-b-0 border-b border-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Debt</a>
+              </li>
+              <li><a href="#"
+                  class="text-base font-avenir sm:py-0 py-2.5 sm:px-5 block leading-[140%] font-normal text-gray-3 sm:border-r sm:border-b-0 border-b border-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Credit
+                  Scores</a>
+              </li>
+              <li><a href="#"
+                  class="text-base sm:px-5 block sm:py-0 py-2.5 leading-[140%] font-avenir font-normal text-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Loan
+                  Information &
+                  Tips</a></li>
+            </ul>
+            <a href="#"
+              class="text-base font-avenir hover:text-white flex items-center justify-center font-normal leading-[140%] text-gray-3"><svg
+                xmlns="http://www.w3.org/2000/svg" width="20" class="mr-2 mb-[1px]" height="15" viewBox="0 0 20 15"
+                fill="none">
+                <path
+                  d="M17.7778 0H2.22222C1.63285 0 1.06763 0.2348 0.650879 0.652739C0.234131 1.07068 0 1.63752 0 2.22857V12.6286C0 13.2196 0.234131 13.7865 0.650879 14.2044C1.06763 14.6223 1.63285 14.8571 2.22222 14.8571H17.7778C18.3671 14.8571 18.9324 14.6223 19.3491 14.2044C19.7659 13.7865 20 13.2196 20 12.6286V2.22857C20 1.63752 19.7659 1.07068 19.3491 0.652739C18.9324 0.2348 18.3671 0 17.7778 0ZM17.3993 3.22103L11.6704 8.14543C11.2059 8.54689 10.6132 8.76802 10 8.76869C9.38703 8.76791 8.79466 8.54678 8.33038 8.14543L2.60148 3.22103C2.48972 3.12471 2.42064 2.98785 2.40939 2.8405C2.39814 2.69315 2.44565 2.54735 2.54149 2.43509C2.63753 2.32301 2.77399 2.25372 2.92093 2.24244C3.06786 2.23116 3.21325 2.2788 3.32519 2.37491L9.05334 7.29931C9.31637 7.52754 9.65255 7.65315 10.0004 7.65315C10.3482 7.65315 10.6844 7.52754 10.9474 7.29931L16.6756 2.37491C16.7875 2.2788 16.9329 2.23116 17.0798 2.24244C17.2268 2.25372 17.3632 2.32301 17.4593 2.43509C17.5551 2.54735 17.6026 2.69315 17.5914 2.8405C17.5801 2.98785 17.511 3.12471 17.3993 3.22103Z"
+                  fill="#A0A2A3" />
+              </svg>assistance@moneylender.com.sg</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-3 sm:px-0 px-16 py-[6px]">
+        <div class="text-center">
+          <p class="text-[13px] font-avenir-medium text-d-color">Copyright © 2022 Moneylenders Loan
+            Academy. All
+            rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

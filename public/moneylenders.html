@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+     <link rel="stylesheet" href="css/style.css">
+     <title>ABOUT_MLA</title>
+</head>
+
+<body class="font-avenir">
+     <div class="overflow-hidden search-fix">
+          <button id="scrollToTopBtn" onclick="topFunction()"
+               class="w-10 h-10 right-5 p-2.5 fixed translate-y-[100px] flex opacity-0 bottom-5 z-[9999] bg-hover-red  items-center justify-center rounded-full"><img
+                    src="images/top-arrow.svg" alt=""></button>
+          <header>
+               <nav class="bg-white  lg:h-auto h-[96px]">
+                    <div
+                         class="max-w-[1220px] sm:px-5 px-4 mx-auto lg:relative py-5 top-0 fixed z-[9999] w-full bg-white">
+                         <div class="flex items-center justify-between">
+                              <a href="index.html" class="flex items-center">
+                                   <img src="images/nav-logo.svg" class="h-14 mr-3" alt="no-img" />
+                              </a>
+                              <button data-collapse-toggle="navbar-dropdown" id="hamburger" type="button"
+                                   onclick="changeImage()"
+                                   class="inline-flex items-center p-2 w-10 h-10 lg:hidden  focus:outline-none focus:ring-0 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                   aria-controls="navbar-dropdown" aria-expanded="false">
+                                   <img src="images/hamburger.svg" id="myImage" alt="">
+                              </button>
+                              <div class="hidden  lg:flex lg:w-auto bg-white gap-11 items-center lg:static absolute top-[10.4rem] lg:pt-0 lg:pb-0 pb-[50px] pt-[30px] lg:px-0 px-[37px] z-[999] w-full left-0"
+                                   id="navbar-dropdown">
+                                   <ul class="lg:flex text-text-13  font-avenir-demogap-10 text-d-color">
+                                        <li class="lg:mb-0 mb-[30px] hover-list">
+                                             <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                                                  data-dropdown-trigger="hover"
+                                                  class="flex hover:text-red-1 lg:px-5 items-center blog-btn w-full font-avenir-demo text-gray-900  md:w-auto uppercase tracking-[.25em]">NEWS
+                                                  & BLOG
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class=" ml-2.5" width="12"
+                                                       height="7" viewBox="0 0 12 7" fill="none">
+                                                       <path d="M10.5837 0C11.4745 0 11.9207 1.07694 11.2909 1.70696L6.70711 6.29261C6.3166 6.68327 5.68333 6.68333 5.29275 6.29275L0.707105 1.70711C0.0771402 1.07714 0.523309 0 1.41421 0H10.5837Z"
+                                                            fill="#131E29" />
+                                                  </svg>
+                                             </button>
+                                             <!-- Dropdown menu -->
+                                             <div id="dropdownHover"
+                                                  class="z-10 hidden lg:!-mt-1 lg:!ml-12 font-normal bg-white divide-y divide-gray-100 rounded-lg xl:shadow-lg w-[247px]">
+                                                  <ul class="xl:py-2 pt-2 xl:px-[30px] px-[18px] text-sm text-gray-700"
+                                                       aria-labelledby="dropdownLargeButton">
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">All
+                                                                 Articles</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Credit
+                                                                 Scores</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Debt</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Loan
+                                                                 Information &
+                                                                 Tips</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Moneylending</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">News
+                                                                 & Loan
+                                                                 Scams</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] xl:py-2.5 pt-2.5">Registry
+                                                                 of
+                                                                 Moneylenders</a>
+                                                       </li>
+                                                  </ul>
+
+                                             </div>
+                                        </li>
+
+                                        <li class="lg:mb-0 mb-[30px]">
+                                             <a href="about-mla.html"
+                                                  class="uppercase lg:px-5 tracking-[.25em] hover:text-red-1 font-avenir-demo"
+                                                  aria-current="page">ABOUT
+                                                  MLA</a>
+                                        </li>
+                                        <li class="lg:mb-0 mb-10">
+                                             <a href="moneylenders.html"
+                                                  class="uppercase lg:px-5 tracking-[.25em] hover:text-red-1 font-avenir-demo">LEGAL
+                                                  MONEYLENDERS</a>
+                                        </li>
+                                   </ul>
+                                   <a href="enquire.html"
+                                        class="bg-red-1 font-primary-medium rounded-md text-white py-2 pt-2.5 min-h-[42px] font-avenir-demo min-w-[126px] text-text-13 hover:bg-hover-red border border-red-1 hover:shadow-lg uppercase tracking-[.25em] flex items-center justify-center">ENQUIRE</a>
+                              </div>
+                         </div>
+                    </div>
+               </nav>
+               <div class="search-wrap bg-gray-1 w-full sm:py-4 py-[14px] flex justify-center items-center">
+                    <form class="w-full max-w-[1220px] sm:px-5 px-4 mx-auto">
+                         <div class="relative">
+                              <button type="submit" class="absolute inset-y-0 right-5">
+                                   <div class=" flex items-center pl-3 ">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M19.7156 18.3279L16.4979 15.1102C17.9355 13.3263 18.6636 11.0742 18.5423 8.78633C18.421 6.49845 17.459 4.33598 15.8408 2.71403C14.0987 0.976041 11.7383 0 9.27743 0C6.81658 0 4.45621 0.976041 2.71404 2.71403C0.976053 4.4562 0 6.81658 0 9.27742C0 11.7383 0.976053 14.0986 2.71404 15.8408C3.57589 16.7034 4.5997 17.3872 5.72666 17.8529C6.85361 18.3186 8.06148 18.557 9.28086 18.5544C11.4038 18.5567 13.4632 17.8296 15.1141 16.4949L18.3308 19.7127C18.5147 19.8966 18.7641 19.9999 19.0242 20C19.1531 20.0001 19.2808 19.9748 19.4 19.9255C19.5191 19.8762 19.6274 19.8038 19.7185 19.7127C19.9014 19.5284 20.0038 19.2792 20.0032 19.0197C20.0027 18.7601 19.8993 18.5113 19.7156 18.3279ZM4.10174 14.4541C2.73074 13.0801 1.96077 11.2184 1.96077 9.27742C1.96077 7.33644 2.73074 5.47472 4.10174 4.10075C4.78134 3.42022 5.58878 2.88073 6.4776 2.51332C7.36642 2.14591 8.3191 1.95782 9.28086 1.95987C10.2416 1.95852 11.1931 2.14686 12.0808 2.51408C12.9686 2.88129 13.7751 3.42016 14.4541 4.09977C15.8248 5.4737 16.5946 7.33521 16.5946 9.27596C16.5946 11.2167 15.8248 13.0782 14.4541 14.4521C13.0806 15.8233 11.2192 16.5936 9.27833 16.594C7.3375 16.5944 5.47579 15.8248 4.10174 14.4541Z"
+                                                  fill="#131E29" />
+                                        </svg>
+
+                                   </div>
+                              </button>
+                              <input type="text" id="simple-search"
+                                   class="block w-full p-2 pr-12 pl-5 min-h-[42px] text-sm text-gray-900 border  border-gray-300 rounded-lg bg-gray-50 focus:border-red-600 font-normal focus:ring-0 placeholder:text-gray-3 placeholder:text-base pt-3"
+                                   placeholder="What are you looking for?" required>
+                         </div>
+                    </form>
+               </div>
+          </header>
+          <section class="bg-d-color py-[50px]">
+               <div class="max-w-[1220px] px-5 mx-auto">
+                    <h6
+                         class="text-xs font-avenir-demo text-white uppercase md:tracking-[.25em] tracking-[2.4px] mb-2.5">
+                         LIST OF
+                         LEGAL MONEYLENDERS
+                    </h6>
+                    <h2 class="font-georgia md:text-text-34 text-[30px] md:leading-[140%] leading-[130%] text-white">
+                         Licensed Moneylenders Registered In
+                         Singapore</h2>
+               </div>
+          </section>
+          <section class="bg-red-1 pt-[30px] pb-10">
+               <div class="max-w-[1220px] md:px-5 pl-4 mx-auto relative">
+                    <div class="lg:mr-5 mr-12">
+                         <div class="float-left mr-1">
+                              <img src="images/note-icon.svg" alt="">
+                         </div>
+                         <p
+                              class="text-white max-w-[1080px] text-base font-avenir font-avenirnext_lt_pro_regularRg mb-6">
+                              <span class="font-avenir-bold">
+                                   Important
+                                   Note:</span> Licensed moneylenders are
+                              disallowed to solicit for loans via whatsapp, text messages or phone calls. If
+                              you
+                              have
+                              received such a message or phone call, it is likely that an unlicensed
+                              moneylender
+                              (a.k.a.
+                              loan shark) has approached you, or more likely a loan scam.
+                         </p>
+                    </div>
+                    <p
+                         class="text-white lg:mr-5 mr-12 max-w-[1080px] text-base font-avenir font-avenirnext_lt_pro_regularRg">
+                         Do not respond
+                         to the message
+                         or
+                         call.
+                         Report such activities to the Police hotline at
+                         1800-255-000, or submit the information online at <a href="#"
+                              class="underline">www.police.gov.sg/iwitness.</a>
+                         Members
+                         of
+                         the public may also call the National Crime Prevention Council’s X-Ah Long hotline at
+                         1800-924-5664.</p>
+                    <div class="ml-2.5">
+                         <a href="#" class="absolute top-0 right-5"><img src="images/cross-icon.svg" alt=""></a>
+                    </div>
+               </div>
+          </section>
+          <section class="md:mt-[70px] mt-[50px] md:mb-[105px] mb-[70px]">
+               <div class="max-w-[1220px] md:px-5 px-4 mx-auto relative">
+                    <div class="relative shadow-md sm:rounded-sm">
+                         <table class="w-full text-left  dark:text-gray-400">
+                              <thead class="sm:text-base text-xs  font-avenir-bold text-black bg-light-white ">
+                                   <tr>
+                                        <th
+                                             class="px-2 border-t border-l py-2.5 md:w-[35%] w-[25%] border-r border-b border-gray-1100">
+                                             Business Name
+                                        </th>
+                                        <th
+                                             class="px-2 border-t  py-2.5  md:w-[35%] w-[25%] border-r border-b border-gray-1100">
+                                             Business Address
+                                        </th>
+                                        <th class="px-2 border-t   py-2.5 w-[15%] border-r border-b border-gray-1100">
+                                             License No.
+                                        </th>
+                                        <th class="px-2 border-t  py-2.5 w-[15%] border-r border-b border-gray-1100">
+                                             Landline No.
+                                        </th>
+                                   </tr>
+                              </thead>
+                              <tbody>
+                                   <tr
+                                        class="bg-white border-r border-gray-1100 text-black font-avenir sm:text-[13px] text-[10px] dark:bg-gray-800 dark:border-gray-700">
+                                        <th
+                                             class="px-2 pt-2.5 pb-4 border-l border-r md:w-[35%] w-[25%] border-b border-gray-1100 font-medium text-gray-900 sm:whitespace-nowrap whitespace-wrap dark:text-white">
+                                             <span class="font-avenir-bold"> 1AP CAPITAL PTE. LTD.</span><br>
+                                             www.1apcapital.sg
+                                        </th>
+                                        <td
+                                             class="px-2 pt-2.5 pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 leading-[140%]">
+                                             10, ANSON ROAD,<br>
+                                             #01-38A, INTERNATIONAL PLAZA,<br>
+                                             SINGAPORE 079903
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             44/2021
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             65335335
+                                        </td>
+                                   </tr>
+                                   <tr
+                                        class="bg-white border-b  text-black font-avenir sm:text-[13px] text-[10px] dark:bg-gray-800 dark:border-gray-700">
+                                        <th
+                                             class="px-2 pt-2.5 pb-4 border-l border-r md:w-[35%] w-[25%] border-b border-gray-1100 font-medium text-gray-900 sm:whitespace-nowrap whitespace-wrap dark:text-white">
+                                             <span class="font-avenir-bold"> BST CREDIT PTE. LTD.</span><br>
+                                             www.bstcredit.com.sg
+                                        </th>
+                                        <td
+                                             class="px-2 pt-2.5 pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 leading-[140%]">
+                                             131, JURONG GATEWAY ROAD,<br>
+                                             #01-251,<br>
+                                             SINGAPORE 600131
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             138/2021
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             62991782
+                                        </td>
+                                   </tr>
+                                   <tr
+                                        class="bg-white text-black font-avenir sm:text-[13px] text-[10px] dark:bg-gray-800">
+                                        <th
+                                             class="px-2 pt-2.5 border-l pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 font-medium text-gray-900 sm:whitespace-nowrap whitespace-wrap dark:text-white">
+                                             <span class="font-avenir-bold"> CREDIT 21 PTE. LTD.</span><br>
+                                             <span> www.credit21.com.sg.</span>
+                                        </th>
+                                        <td
+                                             class="px-2 pt-2.5 pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 leading-[140%]">
+                                             10, ANSON ROAD,<br>
+                                             #01-07, INTERNATIONAL PLAZA,<br>
+                                             SINGAPORE 079903
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             62/2021
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             62211811
+                                        </td>
+                                   </tr>
+                                   <tr
+                                        class="bg-white text-black font-avenir sm:text-[13px] text-[10px] dark:bg-gray-800">
+                                        <th
+                                             class="px-2 pt-2.5 border-l pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 font-medium text-gray-900 sm:whitespace-nowrap whitespace-wrap dark:text-white">
+                                             <span class="font-avenir-bold"> CREDIT MATTERS PTE. LTD.</span><br>
+
+                                             <span> www.creditmatters.com.sg</span>
+                                        </th>
+                                        <td
+                                             class="px-2 pt-2.5 pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 leading-[140%]">
+                                             801, GEYLANG ROAD,<br>
+                                             #02-01,<br>
+                                             SINGAPORE 389681
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             84/2021
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             66363233
+                                        </td>
+                                   </tr>
+                                   <tr
+                                        class="bg-white text-black font-avenir sm:text-[13px] text-[10px] dark:bg-gray-800">
+                                        <th
+                                             class="px-2 pt-2.5 border-l pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 font-medium text-gray-900 sm:whitespace-nowrap whitespace-wrap dark:text-white">
+                                             <span class="font-avenir-bold"> CREDIT THIRTY3 PTE. LTD.</span><br>
+                                             <span>
+                                                  www.creditthirty3.com.sg</span>
+                                        </th>
+                                        <td
+                                             class="px-2 pt-2.5 pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 leading-[140%]">
+                                             190, LORONG 6 TOA PAYOH, #01-548.<br>
+                                             SINGAPORE 310190
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             1/2021
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             62922931
+                                        </td>
+                                   </tr>
+                                   <tr
+                                        class="bg-white text-black font-avenir sm:text-[13px] text-[10px] dark:bg-gray-800">
+                                        <th
+                                             class="px-2 pt-2.5 border-l pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 font-medium text-gray-900 sm:whitespace-nowrap whitespace-wrap dark:text-white">
+                                             <span class="font-avenir-bold"> CREDITMASTER PTE. LTD.</span><br>
+                                             <span>
+                                                  www.creditmaster.sg</span>
+                                        </th>
+                                        <td
+                                             class="px-2 pt-2.5 pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 leading-[140%]">
+                                             531, UPPER CROSS STREET, #01-04,<br>
+                                             HONG LIM COMPLEX,<br>
+                                             SINGAPORE 050531
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             35/2021
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             67481338
+                                        </td>
+                                   </tr>
+                                   <tr
+                                        class="bg-white text-black font-avenir sm:text-[13px] text-[10px] dark:bg-gray-800">
+                                        <th
+                                             class="px-2 pt-2.5 border-l pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 font-medium text-gray-900 sm:whitespace-nowrap whitespace-wrap dark:text-white">
+                                             <span class="font-avenir-bold"> GS CREDIT PTE. LTD.</span><br>
+                                             <span>
+                                                  www.gscredit.com.sg</span>
+                                        </th>
+                                        <td
+                                             class="px-2 pt-2.5 pb-4 border-r md:w-[35%] w-[25%] border-b border-gray-1100 leading-[140%]">
+                                             1, GATEWAY DRIVE, #06-08,<br>
+                                             WESTGATE,<br>
+                                             SINGAPORE 608531
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             109/2021
+                                        </td>
+                                        <td class="px-2 pt-2.5 pb-4 border-r w-[15%] border-b border-gray-1100">
+                                             65630321
+                                        </td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </div>
+               </div>
+          </section>
+          <section class="md:mb-[100px] mb-[70px]">
+               <div class="max-w-[1220px] md:px-5 px-4 mx-auto">
+                    <div
+                         class="relative bg-gray-1 rounded-tl-md rounded-bl-md md:py-[100px] py-[70px] xl:pl-[100px] md:pl-6 pl-5 after:content-[''] after:absolute after:bg-gray-1 after:top-0 after:-right-full after:w-full after:h-full">
+                         <div class="flex flex-wrap md:-mx-2.5">
+                              <div class="md:w-1/2 w-full md:px-2.5">
+                                   <h3
+                                        class="md:text-[34px] text-[30px] font-georgia font-avenirnext_lt_pro_regularRg text-d-color leading-[140%] md:mb-[18px] mb-[11px]">
+                                        How much can you borrow</h3>
+                                   <p
+                                        class="text-base font-avenirnext_lt_pro_regularRg leading-[140%] text-gray-1000 max-w-[480px]">
+                                        For
+                                        secured loans, you can obtain a loan of any amount. For unsecured loans, you can
+                                        obtain:</p>
+                              </div>
+                              <div class="md:w-1/2 w-full md:px-2.5 md:mt-0 mt-[34px]">
+                                   <div class="md:mb-11 mb-6">
+                                        <h5
+                                             class="text-lg font-georgia font-avenirnext_lt_pro_regularRg text-d-color leading-[130%] mb-2.5">
+                                             For Singapore Citizens and Permanent Residents (PR)</h5>
+                                        <p
+                                             class="text-base font-avenirnext_lt_pro_regularRg leading-[140%] text-gray-1000 max-w-[480px]">
+                                             Up
+                                             to
+                                             $3,000, if your annual income is less than $20,000, and up to 6 times your
+                                             monthly income, if your annual income is $20,000 and above.</p>
+                                   </div>
+                                   <div>
+                                        <h5
+                                             class="text-lg font-georgia font-avenirnext_lt_pro_regularRg text-d-color leading-[130%] mb-2.5">
+                                             For Foreigners residing in Singapore</h5>
+                                        <p
+                                             class="text-base font-avenirnext_lt_pro_regularRg leading-[140%] text-gray-1000 max-w-[480px]">
+                                             Up
+                                             to $500, if your annual income is less than $10,000, up to $3,000, if your
+                                             annual income is at least $10,000, but less than $20,000, and up to 6 times
+                                             your monthly income, if your annual income is $20,000 and above.</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="bg-gray-1 md:pt-0 pt-[70px]">
+               <div class="max-w-[1220px] sm:px-5 px-4 mx-auto">
+                    <div class="flex flex-wrap items-center">
+                         <div class="md:w-7/12 w-full md:order-1 order-2">
+                              <img src="images/team-img1.png" class="md:block hidden" class="md:w-auto w-full" alt="">
+                              <img src="images/team.png" class="md:hidden block w-full" class="md:w-auto w-full" alt="">
+                         </div>
+                         <div class="md:w-5/12 w-full md:order-2 order-1">
+                              <div class="text-center md:-ml-[78px]">
+                                   <h3
+                                        class="lg:text-[34px]  text-[30px] font-georgia font-avenirnext_lt_pro_regularRg text-d-color leading-[140%] lg:mb-[18px] md:mb-2.5 mb-5">
+                                        Can’t find what you
+                                        are looking for?
+                                   </h3>
+                                   <p
+                                        class="text-base font-avenirnext_lt_pro_regularRg leading-[140%] text-gray-1000 max-w-[580px] mx-auto">
+                                        Click enquire button
+                                        below to
+                                        leave your contact details and we’ll reach out to you as soon as possible.</p>
+                                   <a href="#"
+                                        class="border-red-1 bg-red-1 hover:border-hover-red text-white lg:mt-[34px] md:mt-2.5 mt-[34px] text-[13px] h-[42px] mx-auto font-avenir-demo flex items-center justify-center border-2 w-[174px] tracking-[0.15em] text-center pt-2.5  pb-[7px] hover:bg-hover-red hover:text-white rounded-lg uppercase">ENQUIRE
+                                        NOW</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <footer>
+               <div class="bg-d-color pt-[30px] pb-[17px]">
+                    <div class="max-w-[1220px] sm:px-5 px-4 mx-auto">
+                         <div class="text-center">
+                              <img src="images/footer-logo.svg" alt="" class="inline-block">
+                              <ul
+                                   class="sm:flex items-center justify-center mt-[30px] sm:mb-6 mb-5 mx-auto sm:max-w-full max-w-[212px]">
+                                   <li><a href="#"
+                                             class="text-base font-avenir sm:py-0 py-2.5 sm:px-5 block leading-[140%] font-normal text-gray-3 sm:border-r sm:border-b-0 border-b border-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Enquire</a>
+                                   </li>
+                                   <li><a href="#"
+                                             class="text-base font-avenir sm:py-0 py-2.5 sm:px-5 block leading-[140%] font-normal text-gray-3 sm:border-r sm:border-b-0 border-b border-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Debt</a>
+                                   </li>
+                                   <li><a href="#"
+                                             class="text-base font-avenir sm:py-0 py-2.5 sm:px-5 block leading-[140%] font-normal text-gray-3 sm:border-r sm:border-b-0 border-b border-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Credit
+                                             Scores</a>
+                                   </li>
+                                   <li><a href="#"
+                                             class="text-base sm:px-5 block sm:py-0 py-2.5 leading-[140%] font-avenir font-normal text-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Loan
+                                             Information &
+                                             Tips</a></li>
+                              </ul>
+                              <a href="#"
+                                   class="text-base font-avenir hover:text-white flex items-center justify-center font-normal leading-[140%] text-gray-3"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="20" class="mr-2 mb-[1px]" height="15"
+                                        viewBox="0 0 20 15" fill="none">
+                                        <path d="M17.7778 0H2.22222C1.63285 0 1.06763 0.2348 0.650879 0.652739C0.234131 1.07068 0 1.63752 0 2.22857V12.6286C0 13.2196 0.234131 13.7865 0.650879 14.2044C1.06763 14.6223 1.63285 14.8571 2.22222 14.8571H17.7778C18.3671 14.8571 18.9324 14.6223 19.3491 14.2044C19.7659 13.7865 20 13.2196 20 12.6286V2.22857C20 1.63752 19.7659 1.07068 19.3491 0.652739C18.9324 0.2348 18.3671 0 17.7778 0ZM17.3993 3.22103L11.6704 8.14543C11.2059 8.54689 10.6132 8.76802 10 8.76869C9.38703 8.76791 8.79466 8.54678 8.33038 8.14543L2.60148 3.22103C2.48972 3.12471 2.42064 2.98785 2.40939 2.8405C2.39814 2.69315 2.44565 2.54735 2.54149 2.43509C2.63753 2.32301 2.77399 2.25372 2.92093 2.24244C3.06786 2.23116 3.21325 2.2788 3.32519 2.37491L9.05334 7.29931C9.31637 7.52754 9.65255 7.65315 10.0004 7.65315C10.3482 7.65315 10.6844 7.52754 10.9474 7.29931L16.6756 2.37491C16.7875 2.2788 16.9329 2.23116 17.0798 2.24244C17.2268 2.25372 17.3632 2.32301 17.4593 2.43509C17.5551 2.54735 17.6026 2.69315 17.5914 2.8405C17.5801 2.98785 17.511 3.12471 17.3993 3.22103Z"
+                                             fill="#A0A2A3" />
+                                   </svg>assistance@moneylender.com.sg</a>
+                         </div>
+                    </div>
+               </div>
+               <div class="bg-gray-3 sm:px-0 px-16 py-[6px]">
+                    <div class="text-center">
+                         <p class="text-[13px] font-avenir-medium text-d-color">Copyright © 2022 Moneylenders Loan
+                              Academy. All
+                              rights reserved.</p>
+                    </div>
+               </div>
+          </footer>
+     </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/main.js"></script>
+
+</body>
+
+</html>

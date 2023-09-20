@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+     <link rel="stylesheet" href="css/style.css">
+     <title>NEWS & BLOG</title>
+</head>
+
+<body class="font-avenir loan-sec">
+     <div class="overflow-hidden search-fix">
+          <button id="scrollToTopBtn" onclick="topFunction()"
+               class="w-10 h-10 right-5 p-2.5 fixed translate-y-[100px] flex opacity-0 bottom-5 z-[9999] bg-hover-red  items-center justify-center rounded-full"><img
+                    src="images/top-arrow.svg" alt=""></button>
+          <header>
+               <nav class="bg-white  lg:h-auto h-[96px]">
+                    <div
+                         class="max-w-[1220px] sm:px-5 px-4 mx-auto lg:relative py-5 top-0 fixed z-[9999] w-full bg-white">
+                         <div class="flex items-center justify-between">
+                              <a href="index.html" class="flex items-center">
+                                   <img src="images/nav-logo.svg" class="h-14 mr-3" alt="no-img" />
+                              </a>
+                              <button data-collapse-toggle="navbar-dropdown" id="hamburger" type="button"
+                                   onclick="changeImage()"
+                                   class="inline-flex items-center p-2 w-10 h-10 lg:hidden  focus:outline-none focus:ring-0 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                   aria-controls="navbar-dropdown" aria-expanded="false">
+                                   <img src="images/hamburger.svg" id="myImage" alt="">
+                              </button>
+                              <div class="hidden  lg:flex lg:w-auto bg-white gap-11 items-center lg:static absolute top-[10.4rem] lg:pt-0 lg:pb-0 pb-[50px] pt-[30px] lg:px-0 px-[37px] z-[999] w-full left-0"
+                                   id="navbar-dropdown">
+                                   <ul class="lg:flex text-text-13  font-avenir-demogap-10 text-d-color">
+                                        <li class="lg:mb-0 mb-[30px] hover-list">
+                                             <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                                                  data-dropdown-trigger="hover"
+                                                  class="flex hover:text-red-1 lg:px-5 items-center blog-btn w-full font-avenir-demo text-gray-900  md:w-auto uppercase tracking-[.25em]">NEWS
+                                                  & BLOG
+                                                  <svg xmlns="http://www.w3.org/2000/svg" class=" ml-2.5" width="12"
+                                                       height="7" viewBox="0 0 12 7" fill="none">
+                                                       <path d="M10.5837 0C11.4745 0 11.9207 1.07694 11.2909 1.70696L6.70711 6.29261C6.3166 6.68327 5.68333 6.68333 5.29275 6.29275L0.707105 1.70711C0.0771402 1.07714 0.523309 0 1.41421 0H10.5837Z"
+                                                            fill="#131E29" />
+                                                  </svg>
+                                             </button>
+                                             <!-- Dropdown menu -->
+                                             <div id="dropdownHover"
+                                                  class="z-10 hidden lg:!-mt-1 lg:!ml-12 font-normal bg-white divide-y divide-gray-100 rounded-lg xl:shadow-lg w-[247px]">
+                                                  <ul class="xl:py-2 pt-2 xl:px-[30px] px-[18px] text-sm text-gray-700"
+                                                       aria-labelledby="dropdownLargeButton">
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">All
+                                                                 Articles</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Credit
+                                                                 Scores</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Debt</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Loan
+                                                                 Information &
+                                                                 Tips</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">Moneylending</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] py-2.5">News
+                                                                 & Loan
+                                                                 Scams</a>
+                                                       </li>
+                                                       <li>
+                                                            <a href="news&blog-article.html"
+                                                                 class="block text-d-color text-base font-avenir hover:text-hover-red leading-[140%] xl:py-2.5 pt-2.5">Registry
+                                                                 of
+                                                                 Moneylenders</a>
+                                                       </li>
+                                                  </ul>
+
+                                             </div>
+                                        </li>
+
+                                        <li class="lg:mb-0 mb-[30px]">
+                                             <a href="about-mla.html"
+                                                  class="uppercase lg:px-5 tracking-[.25em] hover:text-red-1 font-avenir-demo"
+                                                  aria-current="page">ABOUT
+                                                  MLA</a>
+                                        </li>
+                                        <li class="lg:mb-0 mb-10">
+                                             <a href="moneylenders.html"
+                                                  class="uppercase lg:px-5 tracking-[.25em] hover:text-red-1 font-avenir-demo">LEGAL
+                                                  MONEYLENDERS</a>
+                                        </li>
+                                   </ul>
+                                   <a href="enquire.html"
+                                        class="bg-red-1 font-primary-medium rounded-md text-white py-2 pt-2.5 min-h-[42px] font-avenir-demo min-w-[126px] text-text-13 hover:bg-hover-red border border-red-1 hover:shadow-lg uppercase tracking-[.25em] flex items-center justify-center">ENQUIRE</a>
+                              </div>
+                         </div>
+                    </div>
+               </nav>
+               <div class="search-wrap bg-gray-1 w-full sm:py-4 py-[14px] flex justify-center items-center">
+                    <form class="w-full max-w-[1220px] sm:px-5 px-4 mx-auto">
+                         <div class="relative">
+                              <button type="submit" class="absolute inset-y-0 right-5">
+                                   <div class=" flex items-center pl-3 ">
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M19.7156 18.3279L16.4979 15.1102C17.9355 13.3263 18.6636 11.0742 18.5423 8.78633C18.421 6.49845 17.459 4.33598 15.8408 2.71403C14.0987 0.976041 11.7383 0 9.27743 0C6.81658 0 4.45621 0.976041 2.71404 2.71403C0.976053 4.4562 0 6.81658 0 9.27742C0 11.7383 0.976053 14.0986 2.71404 15.8408C3.57589 16.7034 4.5997 17.3872 5.72666 17.8529C6.85361 18.3186 8.06148 18.557 9.28086 18.5544C11.4038 18.5567 13.4632 17.8296 15.1141 16.4949L18.3308 19.7127C18.5147 19.8966 18.7641 19.9999 19.0242 20C19.1531 20.0001 19.2808 19.9748 19.4 19.9255C19.5191 19.8762 19.6274 19.8038 19.7185 19.7127C19.9014 19.5284 20.0038 19.2792 20.0032 19.0197C20.0027 18.7601 19.8993 18.5113 19.7156 18.3279ZM4.10174 14.4541C2.73074 13.0801 1.96077 11.2184 1.96077 9.27742C1.96077 7.33644 2.73074 5.47472 4.10174 4.10075C4.78134 3.42022 5.58878 2.88073 6.4776 2.51332C7.36642 2.14591 8.3191 1.95782 9.28086 1.95987C10.2416 1.95852 11.1931 2.14686 12.0808 2.51408C12.9686 2.88129 13.7751 3.42016 14.4541 4.09977C15.8248 5.4737 16.5946 7.33521 16.5946 9.27596C16.5946 11.2167 15.8248 13.0782 14.4541 14.4521C13.0806 15.8233 11.2192 16.5936 9.27833 16.594C7.3375 16.5944 5.47579 15.8248 4.10174 14.4541Z"
+                                                  fill="#131E29" />
+                                        </svg>
+
+                                   </div>
+                              </button>
+                              <input type="text" id="simple-search"
+                                   class="block w-full p-2 pr-12 pl-5 min-h-[42px] text-sm text-gray-900 border  border-gray-300 rounded-lg bg-gray-50 focus:border-red-600 font-normal focus:ring-0 placeholder:text-gray-3 placeholder:text-base pt-3"
+                                   placeholder="What are you looking for?" required>
+                         </div>
+                    </form>
+               </div>
+          </header>
+          <section class="bg-d-color py-[50px]">
+               <div class="max-w-[1220px] px-5 mx-auto">
+                    <h6 class="text-xs font-avenir-demo text-white uppercase tracking-[.25em] mb-2.5">NEWS & BLOG
+                    </h6>
+                    <h2 class="font-georgia md:text-text-34 text-[30px] md:leading-[140%] leading-[130%] text-white">All
+                         Articles</h2>
+               </div>
+          </section>
+          <section>
+               <div class="sm:bg-black-1000 bg-red-1 xl:overflow-hidden overflow-scroll navbar" id="navbar_top">
+                    <div class="sm:w-[1220px] w-[1105px] md:px-5 mx-auto">
+                         <nav class="sm:flex items-center relative  ">
+                              <ul class="flex items-center ">
+                                   <li>
+                                        <a href="#"
+                                             class="text-white bg-hover-red font-georgia text-lg leading-[130%] border-r border-white md:px-5 px-[18px] pt-[11px] pb-[11px] block">All</a>
+                                   </li>
+                                   <li>
+                                        <a href="#"
+                                             class="text-white hover:bg-hover-red font-georgia text-lg leading-[130%] border-r border-white md:px-5 px-[18px] pt-[11px] pb-[11px] block">
+                                             Credit Scores
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="#"
+                                             class="text-white hover:bg-hover-red font-georgia text-lg leading-[130%] border-r border-white md:px-5 px-[18px] pt-[11px] pb-[11px] block">
+                                             Debt
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="#"
+                                             class="text-white hover:bg-hover-red font-georgia text-lg leading-[130%] border-r border-white md:px-5 px-[18px] pt-[11px] pb-[11px] block">Loan
+                                             Information & Tips</a>
+                                   </li>
+                                   <li>
+                                        <a href="#"
+                                             class="text-white hover:bg-hover-red font-georgia text-lg leading-[130%] border-r border-white md:px-5 px-[18px] pt-[11px] pb-[11px] block">Moneylending</a>
+                                   </li>
+                                   <li>
+                                        <a href="#"
+                                             class="text-white hover:bg-hover-red font-georgia text-lg leading-[130%] border-r border-white md:px-5 px-[18px] pt-[11px] pb-[11px] block">News
+                                             & Loan Scams</a>
+                                   </li>
+                                   <li>
+                                        <a href="#"
+                                             class="text-white hover:bg-hover-red font-georgia text-lg leading-[130%] border-r border-white md:px-5 px-[18px] pt-[11px] pb-[11px] block">Registry
+                                             of Moneylenders</a>
+                                   </li>
+                              </ul>
+
+                         </nav>
+
+                    </div>
+               </div>
+               <div class="relative">
+                    <div class="bg-bg-clr h-[46px] md:hidden block  w-10 absolute right-0 top-[-46px]">
+                    </div>
+               </div>
+          </section>
+          <section class="md:mb-[100px] mb-[70px] mt-[70px]">
+               <div class="max-w-[1220px] md:px-5 px-4 mx-auto">
+                    <div class="flex flex-wrap bg-white ">
+                         <div class="2xl:w-3/4 lg:w-2/3 w-full">
+                              <div class="max-w-[780px]">
+                                   <div class="md:flex flex-wrap border-b border-gray-1 pb-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/iamge-3.png" class="md:w-auto w-full"
+                                                       class="md:w-auto w-full" alt=""></a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  Moneylenders in Toa Payoh
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  Toa Payoh is one of the busiest and most convenient areas in
+                                                  Singapore,
+                                                  with the HDB building being one of its landmarks. With its 117
+                                                  restaurants,
+                                                  229 shops, and excellent public transit, Toa Payoh is a suitable
+                                                  neighbourhood for: • Couples with or wi...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>Moneylending</a>
+                                        </div>
+                                   </div>
+                                   <div class="md:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/image-4.png" class="md:w-auto w-full"
+                                                       alt=""></a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  Moneylenders in Lakeside
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  Lakeside is a gorgeous heartland district in Singapore, nestled in the
+                                                  heart of nature. Surrounded by lush parks, water, and large open
+                                                  spaces,
+                                                  Lakeside will soon become a popular destination for leisure in
+                                                  Singapore.
+                                                  The main attractions in the area will be t...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>Moneylending</a>
+                                        </div>
+                                   </div>
+                                   <div class="md:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/image-5.png" class="md:w-auto w-full"
+                                                       alt=""></a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  How To Get My Personal Loans Quickly Approved For Emergencies In
+                                                  Singapore
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  Personal loans are advantageous in crises and during a financial
+                                                  emergency.
+                                                  These can be available with minimum documentation and would not
+                                                  require any
+                                                  collateral. With many banks sponsori...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>Loan Information & Tips</a>
+                                        </div>
+                                   </div>
+                                   <div class="md:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/image-6.png" class="md:w-auto w-full"
+                                                       alt=""></a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  Moneylenders in Ang Mo Kio
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  Ang Mo Kio is a northern neighbourhood in Singapore. Its name
+                                                  translates as
+                                                  the “red-haired man’s bridge – a colloquialism for Caucasian people.
+                                                  Ang Mo
+                                                  Kio’s expansion began at the crossroads between the 19th and the 20th
+                                                  centuries, when the l...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>Moneylending</a>
+                                        </div>
+                                   </div>
+                                   <div class="md:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/image-7.png" class="md:w-auto w-full"
+                                                       alt=""></a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  Moneylenders in Yishun
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  Yishun has gained a reputation as President Halimah Yacob’s home
+                                                  neighbourhood but shines through other features – including a star
+                                                  appearance in Netflix’s Stranger things. Yishun is an up-and-coming
+                                                  neighbourhood situated in the northeastern...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>Moneylending</a>
+                                        </div>
+                                   </div>
+                                   <div class="md:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/image-8.png" class="md:w-auto w-full"
+                                                       alt=""></a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  Moneylenders in Jurong
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  Rapid development and growth in the Jurong island have been
+                                                  instrumental to
+                                                  it becoming one of the most industrialized regions in all of
+                                                  Singapore, not
+                                                  to mention also a place with a higher-than-average population density.
+                                                  More
+                                                  and more entrepr...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>Moneylending</a>
+                                        </div>
+                                   </div>
+                                   <div class="md:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/image-9.png" class="md:w-auto w-full"
+                                                       alt=""></a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  5 Places To Borrow Money Online In Singapore
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  Do you need to borrow money urgently? Can we actually borrow money
+                                                  online?
+                                                  We all get into situations where we need some quick money to solve a
+                                                  financial crisis. A financial crisis can be anything ranging from a
+                                                  medical
+                                                  emergency or debt consolidati...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>Moneylending</a>
+                                        </div>
+                                   </div>
+                                   <div class="md:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/image-3.png" class="md:w-auto w-full" alt="">
+                                             </a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  3 Simple Tips To Avoid Credit Card Debt In Singapore
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  Avoiding credit card debt is extremely important in today’s world.
+                                                  Unsuspecting credit card users don’t follow the best practices for
+                                                  spending
+                                                  on their credit cards and end up in perpetual debt. The compounding
+                                                  interest doesn’t help either. In 2021, there was an...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>Debt</a>
+                                        </div>
+                                   </div>
+                                   <div class="md:flex flex-wrap border-b border-gray-1 pb-[30px] mt-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/image-2.png" class="md:w-auto w-full" alt="">
+                                             </a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  Watch Out For These Online Scams In Singapore (Signs To Lookout For)
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  There are so many scams happening left, right, and center. More than
+                                                  $201
+                                                  million has been lost to scams! All of us hear stories of how someone
+                                                  we
+                                                  know or someone on the internet was ripped...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>News & Loan Scams</a>
+                                        </div>
+                                   </div>
+                                   <div class="md:flex flex-wrap  mt-[30px]">
+                                        <div>
+                                             <a href="#"> <img src="images/image-1.png" class="md:w-auto w-full" alt="">
+                                             </a>
+                                        </div>
+                                        <div class="flex-1 md:ml-5 md:mt-0 mt-5">
+                                             <a href="#"
+                                                  class="text-lg font-georgia !leading-[130%] text-d-color md:mb-2 mb-2.5 block hover:text-hover-red">
+                                                  Definition Of Credit Cards – Interest Rates & Charges
+                                             </a>
+                                             <p
+                                                  class="text-base font-normal !leading-[140%] text-gray-1000 max-w-[480px] sm:mb-7 mb-4 text">
+                                                  Credit cards sound amazing. Many people rely on them heavily. Credit
+                                                  cards
+                                                  become a long-term credit solution for them. And then they suddenly
+                                                  realize
+                                                  the mistake they have made and find themselves in credit card debt. It
+                                                  might be too late for them to cl...</p>
+                                             <a href="#"
+                                                  class="flex items-center text-sm font-avenir-medium leading-[140%] text-gray-3 file-btn"><svg
+                                                       class="mr-2 mb-[7px]" xmlns="http://www.w3.org/2000/svg"
+                                                       width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                                       <path d="M2.4464 5.18291C2.45493 5.03545 2.52085 4.89695 2.6304 4.79631C2.73994 4.69568 2.88465 4.6407 3.03429 4.64286H17.8775C17.9275 4.64286 17.9753 4.62329 18.0106 4.58846C18.0459 4.55363 18.0657 4.5064 18.0657 4.45714C18.0657 3.86609 17.8278 3.29924 17.4043 2.88131C16.9808 2.46337 16.4064 2.22857 15.8075 2.22857H7.17736C7.05347 2.22859 6.93149 2.19843 6.82224 2.14076C6.71299 2.08309 6.61985 1.99971 6.55109 1.898L5.7163 0.661884C5.57879 0.458223 5.39243 0.291241 5.17378 0.175771C4.95514 0.0603015 4.71098 -7.73199e-05 4.46299 7.43096e-08H2.25822C1.6593 7.43096e-08 1.08491 0.234796 0.661412 0.652734C0.237915 1.07067 0 1.63752 0 2.22857V12.6286C0 13.2196 0.237915 13.7865 0.661412 14.2044C1.08491 14.6223 1.6593 14.8571 2.25822 14.8571H16.2689C16.7795 14.8571 17.275 14.6864 17.6746 14.3727C18.0742 14.059 18.3543 13.621 18.4692 13.13L19.9807 6.66714C20.0062 6.55827 20.0064 6.44513 19.9815 6.33614C19.9565 6.22716 19.9069 6.12514 19.8365 6.03768C19.766 5.95022 19.6764 5.87957 19.5745 5.831C19.4725 5.78243 19.3608 5.75718 19.2475 5.75714H3.01096C2.93534 5.75718 2.86048 5.74222 2.79083 5.71316C2.72118 5.6841 2.65816 5.64152 2.6055 5.58796C2.55285 5.53441 2.51164 5.47096 2.4843 5.40137C2.45697 5.33179 2.44408 5.2575 2.4464 5.18291Z"
+                                                            fill="#A0A2A3"></path>
+                                                  </svg>Debt</a>
+                                        </div>
+                                   </div>
+                                   <nav aria-label="Page navigation example">
+                                        <ul
+                                             class="flex items-center justify-center md:mt-20 mt-14 -space-x-px text-base h-10">
+                                             <li>
+                                                  <a href="#"
+                                                       class="flex items-center justify-center px-4  py-[6px]"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="21" height="8"
+                                                            viewBox="0 0 21 8" fill="none">
+                                                            <path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269202 4.02369 0.269202 3.82843 0.464465L0.646446 3.64644ZM21 3.5L1 3.5L1 4.5L21 4.5L21 3.5Z"
+                                                                 fill="#A0A2A3" />
+                                                       </svg></a>
+                                             </li>
+                                             <li>
+                                                  <a href="#"
+                                                       class="text-base font-avenir font-normal text-white h-[42px] w-[42px] flex items-center justify-center bg-red-1 px-4 py-[6px]">1</a>
+                                             </li>
+                                             <li>
+                                                  <a href="#"
+                                                       class="text-base font-avenir font-normal text-d-color h-[42px] w-[42px] flex items-center justify-center px-4 py-[6px]">2</a>
+                                             </li>
+                                             <li>
+                                                  <a href="#" aria-current="page"
+                                                       class="text-base font-avenir font-normal text-d-color h-[42px] w-[42px] flex items-center justify-center px-4 py-[6px]">3</a>
+                                             </li>
+                                             <li>
+                                                  <a href="#"
+                                                       class="text-base font-avenir font-normal text-d-color h-[42px] w-[42px] flex items-center justify-center px-4 py-[6px]">4</a>
+                                             </li>
+                                             <li>
+                                                  <a href="#"
+                                                       class="text-base font-avenir font-normal text-d-color h-[42px] w-[42px] flex items-center justify-center px-4 py-[6px]">5</a>
+                                             </li>
+                                             <li>
+                                                  <a href="#"
+                                                       class="text-base font-avenir font-normal text-d-color  h-[42px] w-[42px] flex items-center justify-center px-4 py-[6px]">6</a>
+                                             </li>
+                                             <li>
+                                                  <a href="#"
+                                                       class="flex items-center justify-center px-4 py-[6px]"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="21" height="8"
+                                                            viewBox="0 0 21 8" fill="none">
+                                                            <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5L20 4.5V3.5L0 3.5L0 4.5Z"
+                                                                 fill="#131E29" />
+                                                       </svg></a>
+                                             </li>
+                                        </ul>
+                                   </nav>
+                              </div>
+                         </div>
+                         <div class="2xl:w-1/4 lg:w-1/3 w-full 2xl:pl-0 md:pl-8 pl-0 lg:mt-0 mt-[70px]">
+                              <div
+                                   class="bg-gray-1 rounded-tl-md  relative 2xl:pr-0 pr-4  rounded-bl-md md:py-[50px] py-10 xl:pl-[60px] md:pl-6 pl-10 after:content-[''] after:absolute after:bg-gray-1 after:top-0 after:-right-[400%] after:w-[400%] after:h-full">
+                                   <h4 class="text-lg font-georgia !leading-[130%] text-d-color mb-5">
+                                        Popular Articles
+                                   </h4>
+                                   <a href="#"
+                                        class="flex mb-5 text-sm font-avenir-medium leading-[140%] text-gray-1000 file-btn"><svg
+                                             xmlns="http://www.w3.org/2000/svg" width="21" height="18" class="mt-1"
+                                             viewBox="0 0 21 18" fill="none">
+                                             <path d="M15.228 0C15.4402 0 15.6437 0.0842971 15.7937 0.234326C15.9437 0.384355 16.028 0.587827 16.028 0.8V15.6C16.0385 15.9734 16.1285 16.3403 16.292 16.6762C16.4554 17.0121 16.6886 17.3093 16.976 17.548C17.0091 17.5731 17.0333 17.608 17.0452 17.6478C17.0571 17.6876 17.0561 17.73 17.0423 17.7692C17.0286 17.8083 17.0027 17.8421 16.9685 17.8656C16.9343 17.8891 16.8935 17.9011 16.852 17.9H1.90001C1.3961 17.9 0.912823 17.6998 0.556503 17.3435C0.200184 16.9872 9.53674e-06 16.5039 9.53674e-06 16V0.8C9.53674e-06 0.587827 0.0843067 0.384355 0.234335 0.234326C0.384365 0.0842971 0.587835 0 0.800009 0H15.228ZM20.004 9.504V15.288C20.0089 15.646 19.8765 15.9923 19.634 16.2557C19.3915 16.519 19.0572 16.6795 18.7 16.704C18.5156 16.7161 18.3307 16.69 18.1568 16.6274C17.9828 16.5648 17.8237 16.467 17.6893 16.3401C17.5549 16.2132 17.4481 16.06 17.3756 15.89C17.3032 15.72 17.2665 15.5368 17.268 15.352V9.50801C17.268 9.40192 17.3102 9.30016 17.3852 9.22515C17.4602 9.15013 17.5619 9.10801 17.668 9.10801H19.58C19.6342 9.10475 19.6885 9.11252 19.7396 9.13091C19.7906 9.14929 19.8374 9.17789 19.8771 9.21494C19.9167 9.25199 19.9485 9.29674 19.9703 9.34643C19.9921 9.39613 20.0036 9.44973 20.004 9.504ZM12.452 6.204H3.59601C3.43688 6.204 3.28431 6.26721 3.17179 6.37974C3.05927 6.49226 2.99601 6.64487 2.99601 6.804C2.99548 6.88313 3.01062 6.9616 3.04054 7.03486C3.07045 7.10812 3.11456 7.17472 3.17032 7.23086C3.22609 7.287 3.29243 7.33156 3.36549 7.36196C3.43855 7.39236 3.51687 7.40801 3.59601 7.40801H12.468C12.6282 7.40801 12.7819 7.34437 12.8951 7.2311C13.0084 7.11783 13.072 6.96419 13.072 6.804C13.071 6.64451 13.0069 6.4919 12.8937 6.37949C12.7806 6.26708 12.6275 6.204 12.468 6.204H12.452ZM12.452 9.404H3.59601C3.43651 9.40506 3.2839 9.46916 3.17149 9.58232C3.05909 9.69548 2.996 9.84851 2.99601 10.008C2.99601 10.1671 3.05927 10.3198 3.17179 10.4323C3.28431 10.5448 3.43688 10.608 3.59601 10.608H12.468C12.6275 10.608 12.7806 10.5449 12.8937 10.4325C13.0069 10.3201 13.071 10.1675 13.072 10.008C13.0699 9.84883 13.0055 9.6968 12.8926 9.58462C12.7797 9.47243 12.6272 9.40904 12.468 9.40801L12.452 9.404ZM12.452 3.004H3.59601C3.43651 3.00506 3.2839 3.06917 3.17149 3.18232C3.05909 3.29548 2.996 3.44851 2.99601 3.60801C2.996 3.76751 3.05909 3.92053 3.17149 4.03369C3.2839 4.14685 3.43651 4.21095 3.59601 4.21201H12.468C12.6279 4.21096 12.7809 4.14698 12.894 4.03394C13.007 3.92089 13.071 3.76787 13.072 3.60801C13.0726 3.52816 13.0574 3.44897 13.0273 3.375C12.9972 3.30103 12.9529 3.23373 12.8968 3.1769C12.8407 3.12007 12.774 3.07484 12.7004 3.0438C12.6268 3.01276 12.5479 2.99652 12.468 2.996L12.452 3.004Z"
+                                                  fill="#A0A2A3" />
+                                        </svg><span class="flex-1 ml-2.5">How Do I Manage A Personal Loan</span></a>
+                                   <a href="#"
+                                        class="flex mb-5 text-sm font-avenir-medium leading-[140%] text-gray-1000 file-btn"><svg
+                                             xmlns="http://www.w3.org/2000/svg" width="21" height="18" class="mt-1"
+                                             viewBox="0 0 21 18" fill="none">
+                                             <path d="M15.228 0C15.4402 0 15.6437 0.0842971 15.7937 0.234326C15.9437 0.384355 16.028 0.587827 16.028 0.8V15.6C16.0385 15.9734 16.1285 16.3403 16.292 16.6762C16.4554 17.0121 16.6886 17.3093 16.976 17.548C17.0091 17.5731 17.0333 17.608 17.0452 17.6478C17.0571 17.6876 17.0561 17.73 17.0423 17.7692C17.0286 17.8083 17.0027 17.8421 16.9685 17.8656C16.9343 17.8891 16.8935 17.9011 16.852 17.9H1.90001C1.3961 17.9 0.912823 17.6998 0.556503 17.3435C0.200184 16.9872 9.53674e-06 16.5039 9.53674e-06 16V0.8C9.53674e-06 0.587827 0.0843067 0.384355 0.234335 0.234326C0.384365 0.0842971 0.587835 0 0.800009 0H15.228ZM20.004 9.504V15.288C20.0089 15.646 19.8765 15.9923 19.634 16.2557C19.3915 16.519 19.0572 16.6795 18.7 16.704C18.5156 16.7161 18.3307 16.69 18.1568 16.6274C17.9828 16.5648 17.8237 16.467 17.6893 16.3401C17.5549 16.2132 17.4481 16.06 17.3756 15.89C17.3032 15.72 17.2665 15.5368 17.268 15.352V9.50801C17.268 9.40192 17.3102 9.30016 17.3852 9.22515C17.4602 9.15013 17.5619 9.10801 17.668 9.10801H19.58C19.6342 9.10475 19.6885 9.11252 19.7396 9.13091C19.7906 9.14929 19.8374 9.17789 19.8771 9.21494C19.9167 9.25199 19.9485 9.29674 19.9703 9.34643C19.9921 9.39613 20.0036 9.44973 20.004 9.504ZM12.452 6.204H3.59601C3.43688 6.204 3.28431 6.26721 3.17179 6.37974C3.05927 6.49226 2.99601 6.64487 2.99601 6.804C2.99548 6.88313 3.01062 6.9616 3.04054 7.03486C3.07045 7.10812 3.11456 7.17472 3.17032 7.23086C3.22609 7.287 3.29243 7.33156 3.36549 7.36196C3.43855 7.39236 3.51687 7.40801 3.59601 7.40801H12.468C12.6282 7.40801 12.7819 7.34437 12.8951 7.2311C13.0084 7.11783 13.072 6.96419 13.072 6.804C13.071 6.64451 13.0069 6.4919 12.8937 6.37949C12.7806 6.26708 12.6275 6.204 12.468 6.204H12.452ZM12.452 9.404H3.59601C3.43651 9.40506 3.2839 9.46916 3.17149 9.58232C3.05909 9.69548 2.996 9.84851 2.99601 10.008C2.99601 10.1671 3.05927 10.3198 3.17179 10.4323C3.28431 10.5448 3.43688 10.608 3.59601 10.608H12.468C12.6275 10.608 12.7806 10.5449 12.8937 10.4325C13.0069 10.3201 13.071 10.1675 13.072 10.008C13.0699 9.84883 13.0055 9.6968 12.8926 9.58462C12.7797 9.47243 12.6272 9.40904 12.468 9.40801L12.452 9.404ZM12.452 3.004H3.59601C3.43651 3.00506 3.2839 3.06917 3.17149 3.18232C3.05909 3.29548 2.996 3.44851 2.99601 3.60801C2.996 3.76751 3.05909 3.92053 3.17149 4.03369C3.2839 4.14685 3.43651 4.21095 3.59601 4.21201H12.468C12.6279 4.21096 12.7809 4.14698 12.894 4.03394C13.007 3.92089 13.071 3.76787 13.072 3.60801C13.0726 3.52816 13.0574 3.44897 13.0273 3.375C12.9972 3.30103 12.9529 3.23373 12.8968 3.1769C12.8407 3.12007 12.774 3.07484 12.7004 3.0438C12.6268 3.01276 12.5479 2.99652 12.468 2.996L12.452 3.004Z"
+                                                  fill="#A0A2A3" />
+                                        </svg><span class="flex-1 ml-2.5">$110,000 Lost In A Recent Loan Scam Where
+                                             Crooks Impersonate MAS Officers
+                                             From The Ministry Of Law</span></a>
+                                   <a href="#"
+                                        class="flex mb-5 text-sm font-avenir-medium leading-[140%] text-gray-1000 file-btn"><svg
+                                             xmlns="http://www.w3.org/2000/svg" width="21" height="18" class="mt-1"
+                                             viewBox="0 0 21 18" fill="none">
+                                             <path d="M15.228 0C15.4402 0 15.6437 0.0842971 15.7937 0.234326C15.9437 0.384355 16.028 0.587827 16.028 0.8V15.6C16.0385 15.9734 16.1285 16.3403 16.292 16.6762C16.4554 17.0121 16.6886 17.3093 16.976 17.548C17.0091 17.5731 17.0333 17.608 17.0452 17.6478C17.0571 17.6876 17.0561 17.73 17.0423 17.7692C17.0286 17.8083 17.0027 17.8421 16.9685 17.8656C16.9343 17.8891 16.8935 17.9011 16.852 17.9H1.90001C1.3961 17.9 0.912823 17.6998 0.556503 17.3435C0.200184 16.9872 9.53674e-06 16.5039 9.53674e-06 16V0.8C9.53674e-06 0.587827 0.0843067 0.384355 0.234335 0.234326C0.384365 0.0842971 0.587835 0 0.800009 0H15.228ZM20.004 9.504V15.288C20.0089 15.646 19.8765 15.9923 19.634 16.2557C19.3915 16.519 19.0572 16.6795 18.7 16.704C18.5156 16.7161 18.3307 16.69 18.1568 16.6274C17.9828 16.5648 17.8237 16.467 17.6893 16.3401C17.5549 16.2132 17.4481 16.06 17.3756 15.89C17.3032 15.72 17.2665 15.5368 17.268 15.352V9.50801C17.268 9.40192 17.3102 9.30016 17.3852 9.22515C17.4602 9.15013 17.5619 9.10801 17.668 9.10801H19.58C19.6342 9.10475 19.6885 9.11252 19.7396 9.13091C19.7906 9.14929 19.8374 9.17789 19.8771 9.21494C19.9167 9.25199 19.9485 9.29674 19.9703 9.34643C19.9921 9.39613 20.0036 9.44973 20.004 9.504ZM12.452 6.204H3.59601C3.43688 6.204 3.28431 6.26721 3.17179 6.37974C3.05927 6.49226 2.99601 6.64487 2.99601 6.804C2.99548 6.88313 3.01062 6.9616 3.04054 7.03486C3.07045 7.10812 3.11456 7.17472 3.17032 7.23086C3.22609 7.287 3.29243 7.33156 3.36549 7.36196C3.43855 7.39236 3.51687 7.40801 3.59601 7.40801H12.468C12.6282 7.40801 12.7819 7.34437 12.8951 7.2311C13.0084 7.11783 13.072 6.96419 13.072 6.804C13.071 6.64451 13.0069 6.4919 12.8937 6.37949C12.7806 6.26708 12.6275 6.204 12.468 6.204H12.452ZM12.452 9.404H3.59601C3.43651 9.40506 3.2839 9.46916 3.17149 9.58232C3.05909 9.69548 2.996 9.84851 2.99601 10.008C2.99601 10.1671 3.05927 10.3198 3.17179 10.4323C3.28431 10.5448 3.43688 10.608 3.59601 10.608H12.468C12.6275 10.608 12.7806 10.5449 12.8937 10.4325C13.0069 10.3201 13.071 10.1675 13.072 10.008C13.0699 9.84883 13.0055 9.6968 12.8926 9.58462C12.7797 9.47243 12.6272 9.40904 12.468 9.40801L12.452 9.404ZM12.452 3.004H3.59601C3.43651 3.00506 3.2839 3.06917 3.17149 3.18232C3.05909 3.29548 2.996 3.44851 2.99601 3.60801C2.996 3.76751 3.05909 3.92053 3.17149 4.03369C3.2839 4.14685 3.43651 4.21095 3.59601 4.21201H12.468C12.6279 4.21096 12.7809 4.14698 12.894 4.03394C13.007 3.92089 13.071 3.76787 13.072 3.60801C13.0726 3.52816 13.0574 3.44897 13.0273 3.375C12.9972 3.30103 12.9529 3.23373 12.8968 3.1769C12.8407 3.12007 12.774 3.07484 12.7004 3.0438C12.6268 3.01276 12.5479 2.99652 12.468 2.996L12.452 3.004Z"
+                                                  fill="#A0A2A3" />
+                                        </svg><span class="flex-1 ml-2.5">How Do I Know If A Moneylender Is
+                                             Licensed</span></a>
+                                   <a href="#"
+                                        class="flex  text-sm font-avenir-medium leading-[140%] text-gray-1000 file-btn"><svg
+                                             xmlns="http://www.w3.org/2000/svg" width="21" height="18" class="mt-1"
+                                             viewBox="0 0 21 18" fill="none">
+                                             <path d="M15.228 0C15.4402 0 15.6437 0.0842971 15.7937 0.234326C15.9437 0.384355 16.028 0.587827 16.028 0.8V15.6C16.0385 15.9734 16.1285 16.3403 16.292 16.6762C16.4554 17.0121 16.6886 17.3093 16.976 17.548C17.0091 17.5731 17.0333 17.608 17.0452 17.6478C17.0571 17.6876 17.0561 17.73 17.0423 17.7692C17.0286 17.8083 17.0027 17.8421 16.9685 17.8656C16.9343 17.8891 16.8935 17.9011 16.852 17.9H1.90001C1.3961 17.9 0.912823 17.6998 0.556503 17.3435C0.200184 16.9872 9.53674e-06 16.5039 9.53674e-06 16V0.8C9.53674e-06 0.587827 0.0843067 0.384355 0.234335 0.234326C0.384365 0.0842971 0.587835 0 0.800009 0H15.228ZM20.004 9.504V15.288C20.0089 15.646 19.8765 15.9923 19.634 16.2557C19.3915 16.519 19.0572 16.6795 18.7 16.704C18.5156 16.7161 18.3307 16.69 18.1568 16.6274C17.9828 16.5648 17.8237 16.467 17.6893 16.3401C17.5549 16.2132 17.4481 16.06 17.3756 15.89C17.3032 15.72 17.2665 15.5368 17.268 15.352V9.50801C17.268 9.40192 17.3102 9.30016 17.3852 9.22515C17.4602 9.15013 17.5619 9.10801 17.668 9.10801H19.58C19.6342 9.10475 19.6885 9.11252 19.7396 9.13091C19.7906 9.14929 19.8374 9.17789 19.8771 9.21494C19.9167 9.25199 19.9485 9.29674 19.9703 9.34643C19.9921 9.39613 20.0036 9.44973 20.004 9.504ZM12.452 6.204H3.59601C3.43688 6.204 3.28431 6.26721 3.17179 6.37974C3.05927 6.49226 2.99601 6.64487 2.99601 6.804C2.99548 6.88313 3.01062 6.9616 3.04054 7.03486C3.07045 7.10812 3.11456 7.17472 3.17032 7.23086C3.22609 7.287 3.29243 7.33156 3.36549 7.36196C3.43855 7.39236 3.51687 7.40801 3.59601 7.40801H12.468C12.6282 7.40801 12.7819 7.34437 12.8951 7.2311C13.0084 7.11783 13.072 6.96419 13.072 6.804C13.071 6.64451 13.0069 6.4919 12.8937 6.37949C12.7806 6.26708 12.6275 6.204 12.468 6.204H12.452ZM12.452 9.404H3.59601C3.43651 9.40506 3.2839 9.46916 3.17149 9.58232C3.05909 9.69548 2.996 9.84851 2.99601 10.008C2.99601 10.1671 3.05927 10.3198 3.17179 10.4323C3.28431 10.5448 3.43688 10.608 3.59601 10.608H12.468C12.6275 10.608 12.7806 10.5449 12.8937 10.4325C13.0069 10.3201 13.071 10.1675 13.072 10.008C13.0699 9.84883 13.0055 9.6968 12.8926 9.58462C12.7797 9.47243 12.6272 9.40904 12.468 9.40801L12.452 9.404ZM12.452 3.004H3.59601C3.43651 3.00506 3.2839 3.06917 3.17149 3.18232C3.05909 3.29548 2.996 3.44851 2.99601 3.60801C2.996 3.76751 3.05909 3.92053 3.17149 4.03369C3.2839 4.14685 3.43651 4.21095 3.59601 4.21201H12.468C12.6279 4.21096 12.7809 4.14698 12.894 4.03394C13.007 3.92089 13.071 3.76787 13.072 3.60801C13.0726 3.52816 13.0574 3.44897 13.0273 3.375C12.9972 3.30103 12.9529 3.23373 12.8968 3.1769C12.8407 3.12007 12.774 3.07484 12.7004 3.0438C12.6268 3.01276 12.5479 2.99652 12.468 2.996L12.452 3.004Z"
+                                                  fill="#A0A2A3" />
+                                        </svg><span class="flex-1 ml-2.5">What Are The New Borrowing Restrictions For
+                                             Foreigners</span></a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="bg-gray-1 md:pt-0 pt-[70px]">
+               <div class="max-w-[1220px] sm:px-5 px-4 mx-auto">
+                    <div class="flex flex-wrap items-center">
+                         <div class="md:w-7/12 w-full md:order-1 order-2">
+                              <img src="images/team-img1.png" class="md:block hidden" class="md:w-auto w-full" alt="">
+                              <img src="images/team.png" class="md:hidden block w-full" class="md:w-auto w-full" alt="">
+                         </div>
+                         <div class="md:w-5/12 w-full md:order-2 order-1">
+                              <div class="text-center md:-ml-[78px]">
+                                   <h3
+                                        class="lg:text-[34px] text-[30px] font-georgia font-normal text-d-color leading-[140%] lg:mb-[18px] md:mb-2.5 mb-5">
+                                        Can’t find what you
+                                        are looking for?
+                                   </h3>
+                                   <p class="text-base font-normal leading-[140%] text-gray-1000 max-w-[580px] mx-auto">
+                                        Click enquire button
+                                        below to
+                                        leave your contact details and we’ll reach out to you as soon as possible.</p>
+                                   <a href="#"
+                                        class="border-red-1 bg-red-1 hover:border-hover-red text-white lg:mt-[34px] md:mt-2.5 mt-[34px] text-[13px] h-[42px] mx-auto font-avenir-demo flex items-center justify-center border-2 w-[174px] tracking-[0.15em] text-center pt-2.5  pb-[7px] hover:bg-hover-red hover:text-white rounded-lg uppercase">ENQUIRE
+                                        NOW</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <footer>
+               <div class="bg-d-color pt-[30px] pb-[17px]">
+                    <div class="max-w-[1220px] sm:px-5 px-4 mx-auto">
+                         <div class="text-center">
+                              <img src="images/footer-logo.svg" alt="" class="inline-block">
+                              <ul
+                                   class="sm:flex items-center justify-center mt-[30px] sm:mb-6 mb-5 mx-auto sm:max-w-full max-w-[212px]">
+                                   <li><a href="#"
+                                             class="text-base font-avenir sm:py-0 py-2.5 sm:px-5 block leading-[140%] font-normal text-gray-3 sm:border-r sm:border-b-0 border-b border-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Enquire</a>
+                                   </li>
+                                   <li><a href="#"
+                                             class="text-base font-avenir sm:py-0 py-2.5 sm:px-5 block leading-[140%] font-normal text-gray-3 sm:border-r sm:border-b-0 border-b border-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Debt</a>
+                                   </li>
+                                   <li><a href="#"
+                                             class="text-base font-avenir sm:py-0 py-2.5 sm:px-5 block leading-[140%] font-normal text-gray-3 sm:border-r sm:border-b-0 border-b border-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Credit
+                                             Scores</a>
+                                   </li>
+                                   <li><a href="#"
+                                             class="text-base sm:px-5 block sm:py-0 py-2.5 leading-[140%] font-avenir font-normal text-gray-3 hover:text-white opacity-[0.5] hover:opacity-[1]">Loan
+                                             Information &
+                                             Tips</a></li>
+                              </ul>
+                              <a href="#"
+                                   class="text-base font-avenir hover:text-white flex items-center justify-center font-normal leading-[140%] text-gray-3"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="20" class="mr-2 mb-[1px]" height="15"
+                                        viewBox="0 0 20 15" fill="none">
+                                        <path d="M17.7778 0H2.22222C1.63285 0 1.06763 0.2348 0.650879 0.652739C0.234131 1.07068 0 1.63752 0 2.22857V12.6286C0 13.2196 0.234131 13.7865 0.650879 14.2044C1.06763 14.6223 1.63285 14.8571 2.22222 14.8571H17.7778C18.3671 14.8571 18.9324 14.6223 19.3491 14.2044C19.7659 13.7865 20 13.2196 20 12.6286V2.22857C20 1.63752 19.7659 1.07068 19.3491 0.652739C18.9324 0.2348 18.3671 0 17.7778 0ZM17.3993 3.22103L11.6704 8.14543C11.2059 8.54689 10.6132 8.76802 10 8.76869C9.38703 8.76791 8.79466 8.54678 8.33038 8.14543L2.60148 3.22103C2.48972 3.12471 2.42064 2.98785 2.40939 2.8405C2.39814 2.69315 2.44565 2.54735 2.54149 2.43509C2.63753 2.32301 2.77399 2.25372 2.92093 2.24244C3.06786 2.23116 3.21325 2.2788 3.32519 2.37491L9.05334 7.29931C9.31637 7.52754 9.65255 7.65315 10.0004 7.65315C10.3482 7.65315 10.6844 7.52754 10.9474 7.29931L16.6756 2.37491C16.7875 2.2788 16.9329 2.23116 17.0798 2.24244C17.2268 2.25372 17.3632 2.32301 17.4593 2.43509C17.5551 2.54735 17.6026 2.69315 17.5914 2.8405C17.5801 2.98785 17.511 3.12471 17.3993 3.22103Z"
+                                             fill="#A0A2A3" />
+                                   </svg>assistance@moneylender.com.sg</a>
+                         </div>
+                    </div>
+               </div>
+               <div class="bg-gray-3 sm:px-0 px-16 py-[6px]">
+                    <div class="text-center">
+                         <p class="text-[13px] font-avenir-medium text-d-color">Copyright © 2022 Moneylenders Loan
+                              Academy. All
+                              rights reserved.</p>
+                    </div>
+               </div>
+          </footer>
+     </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
